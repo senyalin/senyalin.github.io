@@ -4,7 +4,11 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
         <script>
             $(document).ready(function(){
-                var url = $('iframe').attr('src');
+                var url_tm = $('#iframe_tm').attr('src');
+                var url_pm = $('#iframe_pm').attr('src');
+                var url_gi = $('#iframe_gi').attr('src');
+                var url_qc = $('#iframe_qc').attr('src');
+                
                 $('iframe').hide();
                 $('button').hide();
                 
@@ -13,10 +17,33 @@
                     $('button').hide();
                 });
                 
-                $('#show').click(function(){
-                    $('iframe').attr('src', url).show();
+                $('#show_tm').click(function(){
+                    $('iframe').attr('src', '').hide();
+                    //$('button').hide();
+                    $('#iframe_tm').attr('src', url_tm).show();
                     $('button').show();
                 });
+                
+                $('#show_pm').click(function(){
+                    $('iframe').attr('src', '').hide();
+                    //$('button').hide();
+                    $('#iframe_pm').attr('src', url_pm).show();
+                    $('button').show();
+                });
+                
+                $('#show_gi').click(function(){
+                    $('iframe').attr('src', '').hide();
+                    //$('button').hide();
+                    $('#iframe_gi').attr('src', url_gi).show();
+                    $('button').show();
+                });
+                
+                $('#show_qc').click(function(){
+                    $('iframe').attr('src', '').hide();
+                    //$('button').hide();
+                    $('#iframe_qc').attr('src', url_qc).show();
+                    $('button').show();
+                });                
             });
         </script>
     </head>
@@ -29,23 +56,26 @@
         <div>
             <h3>About Me</h3>
             <p align="justify">Howdy! My name is Jason Lin (<a href="https://senyalin.github.io/profile/jasonlin_cv.pdf" target="_blank">CV</a>). 
-            <br>I received the PhD degree in <a href="https://engineering.tamu.edu/cse/" target="_blank">Computer Science and Engineering</a> from <a href="https://www.tamu.edu/" target="_blank">Texas A&M University</a> at College Station, in 2020.
-			<br>My advisor is Professor <a href="https://engineering.tamu.edu/cse/profiles/jliu.html" target="_blank">Jyh-Charn Liu</a>, the director of <a href="http://rtds.cse.tamu.edu/" target="_blank">Real-Time Distributed Systems Laboratory</a>.
-			<br>I am currently open to any research and teaching positions. </p>
+            <br>I just graduated with a PhD degree in <a href="https://engineering.tamu.edu/cse/" target="_blank">Computer Science and Engineering</a> from <a href="https://www.tamu.edu/" target="_blank">Texas A&M University</a> at College Station, in 2020.
+            <br>My advisor is Professor <a href="https://engineering.tamu.edu/cse/profiles/jliu.html" target="_blank">Jyh-Charn Liu</a>, the director of <a href="http://rtds.cse.tamu.edu/" target="_blank">Real-Time Distributed Systems Laboratory</a>.
+            <br>I am currently open to any research and development position. </p>
         </div>
         <div>
             <h3>Research Interests</h3>
         </div>
         <div align="center">
-            <iframe width="854" height="480" src="https://www.youtube.com/embed/7oat7MatU_U" frameborder="3" allowfullscreen=""></iframe>
+            <iframe id="iframe_tm" width="854" height="480" src="https://www.youtube.com/embed/I3cjbB38Z4A" frameborder="3" allowfullscreen=""></iframe>
+            <iframe id="iframe_pm" width="854" height="480" src="https://www.youtube.com/embed/7oat7MatU_U" frameborder="3" allowfullscreen=""></iframe>
+            <iframe id="iframe_gi" width="854" height="480" src="https://www.youtube.com/embed/IXL6nK58VB0" frameborder="3" allowfullscreen=""></iframe>
+            <iframe id="iframe_qc" width="854" height="480" src="https://www.youtube.com/embed/WVv5OAR4Nik" frameborder="3" allowfullscreen=""></iframe>
         </div>
         <div align="center">
             <button style="height:25px; width:50px" id="hide">Close</button>
-        </div>      
+        </div>
         <div align="justify">
-            <p align="justify">My current research mainly focuses on the fundamental issues of <a href="https://en.wikipedia.org/wiki/Document_engineering" target="_blank">Document Engineering</a> and the use of <a id="show" class="" href='#'>Business Process Mining</a> techniques to extract the relational properties of textual descriptions and mathematical expressions from scientific publications. 
-            <br>Before diving into this field, I was actively involved in a project sponsored by the <a href="https://www.onr.navy.mil/" target="_blank">Office of Naval Research</a>, which developed a situational awareness system based on <a href="https://en.wikipedia.org/wiki/Geospatial_intelligence" target="_blank">Geospatial Intelligence</a> and conflict events to model the tactical behavior of asymmetric warfare. 
-            <br>Apart from the above research, I have also studied <a href="https://en.wikipedia.org/wiki/Quantum_cryptography" target="_blank">Quantum Cryptography</a> and published several significant results in prestigious journals. 
+            <p align="justify">My current research mainly focuses on the fundamental issues of <a id="show_tm" class="" href='#'>Text Mining</a> and the use of <a id="show_pm" class="" href='#'>Process Mining</a> techniques to explore the coreference patterns of textual descriptions and mathematical expressions from scientific publications. 
+            <br>Before diving into this field, I was actively involved in a project sponsored by the <a href="https://www.onr.navy.mil/" target="_blank">Office of Naval Research</a>, which developed a situational awareness system based on <a id="show_gi" class="" href='#'>Geospatial Intelligence</a> and conflict events to model the tactical behavior of asymmetric warfare. 
+            <br>Apart from the above research, I have also studied <a  id="show_qc" class="" href='#'>Quantum Computing</a> and published several significant results in prestigious journals. 
             <br>Please feel free to contact me if you need any further information.</p>
         </div>
         <div>
