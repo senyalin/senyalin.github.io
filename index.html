@@ -1,128 +1,122 @@
 <html>
-    <head>
-        <title>Jason Lin</title>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-        <script>
-            $(document).ready(function(){
-                var url_tm = $('#iframe_tm').attr('src');
-                var url_pm = $('#iframe_pm').attr('src');
-                var url_gi = $('#iframe_gi').attr('src');
-                var url_qc = $('#iframe_qc').attr('src');
-                
-                $('iframe').hide();
-                $('button').hide();
-                
-                $('#hide').click(function(){
-                    $('iframe').attr('src', '').hide();
-                    $('button').hide();
-                });
-                
-                $('#show_tm').click(function(){
-                    $('iframe').attr('src', '').hide();
-                    //$('button').hide();
-                    $('#iframe_tm').attr('src', url_tm).show();
-                    $('button').show();
-                });
-                
-                $('#show_pm').click(function(){
-                    $('iframe').attr('src', '').hide();
-                    //$('button').hide();
-                    $('#iframe_pm').attr('src', url_pm).show();
-                    $('button').show();
-                });
-                
-                $('#show_gi').click(function(){
-                    $('iframe').attr('src', '').hide();
-                    //$('button').hide();
-                    $('#iframe_gi').attr('src', url_gi).show();
-                    $('button').show();
-                });
-                
-                $('#show_qc').click(function(){
-                    $('iframe').attr('src', '').hide();
-                    //$('button').hide();
-                    $('#iframe_qc').attr('src', url_qc).show();
-                    $('button').show();
-                });                
-            });
-        </script>
-    </head>
+	<head>
+		<title>Jason Lin</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				var url_tm = $('#iframe_tm').attr('src');
+				var url_pm = $('#iframe_pm').attr('src');
+				var url_gi = $('#iframe_gi').attr('src');
+				var url_qc = $('#iframe_qc').attr('src');
+				
+				$('iframe').hide();
+				$('button').hide();
+				
+				$('#hide').click(function(){
+					$('iframe').attr('src', '').hide();
+					$('button').hide();
+				});
+				
+				$('#show_tm').click(function(){
+					$('iframe').attr('src', '').hide();
+					//$('button').hide();
+					$('#iframe_tm').attr('src', url_tm).show();
+					$('button').show();
+				});
+				
+				$('#show_pm').click(function(){
+					$('iframe').attr('src', '').hide();
+					//$('button').hide();
+					$('#iframe_pm').attr('src', url_pm).show();
+					$('button').show();
+				});
+				
+				$('#show_gi').click(function(){
+					$('iframe').attr('src', '').hide();
+					//$('button').hide();
+					$('#iframe_gi').attr('src', url_gi).show();
+					$('button').show();
+				});
+				
+				$('#show_qc').click(function(){
+					$('iframe').attr('src', '').hide();
+					//$('button').hide();
+					$('#iframe_qc').attr('src', url_qc).show();
+					$('button').show();
+				});                
+			});
+		</script>
+	</head>
     
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <body bgcolor="#E6E6FA">
-        <div>
-            <img src="profile/me.jpg" alt="Profile picture" height="150" width="150" />
-            <img src="profile/mouse.gif" alt="Scared mouse" height="75" width="75" align="right" style="margin-top: 75px" />
-        </div>
-        <div>
-            <h3>About Me</h3>
-            <p align="justify">Howdy! My name is <a href="https://www.linkedin.com/in/senyalin" target="_blank">Jason Lin</a>.
-            <br>I am currently an assistant professor in the <a href="https://www.istm.fcu.edu.tw/index_en.php" target="_blank">International School of Technology and Management</a> at <a href="http://en.fcu.edu.tw/" target="_blank">Feng Chia University</a>, Taiwan.
-            <br>I hold a doctoral degree in <a href="https://engineering.tamu.edu/ce/index.html" target="_blank">Computer Engineering</a> from <a href="https://www.tamu.edu/" target="_blank">Texas A&M University</a>, College Station.</p>
-        </div>
-        <div>
-            <h3>Research Interests</h3>
-        </div>
-        <div align="center">
-            <iframe id="iframe_tm" width="854" height="480" src="https://www.youtube.com/embed/I3cjbB38Z4A" frameborder="3" allowfullscreen=""></iframe>
-            <iframe id="iframe_pm" width="854" height="480" src="https://www.youtube.com/embed/7oat7MatU_U" frameborder="3" allowfullscreen=""></iframe>
-            <iframe id="iframe_gi" width="854" height="480" src="https://www.youtube.com/embed/-8keqUuxT6Y" frameborder="3" allowfullscreen=""></iframe>
-            <iframe id="iframe_qc" width="854" height="480" src="https://www.youtube.com/embed/WVv5OAR4Nik" frameborder="3" allowfullscreen=""></iframe>
-        </div>
-        <div align="center">
-            <button style="height:25px; width:50px" id="hide">Close</button>
-        </div>
-        <div align="justify">
-            <p align="justify">My research mainly focuses on the fundamental issues of <a id="show_tm" class="" href='#'>Text Mining</a> and the use of <a id="show_pm" class="" href='#'>Process Mining</a> techniques to explore the coreference patterns of textual descriptions and mathematical expressions from scientific publications. 
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<body bgcolor="#E6E6FA">
+		<div>
+			<img src="profile/me.jpg" alt="Profile picture" height="150" width="150" />
+			<img src="profile/mouse.gif" alt="Scared mouse" height="75" width="75" align="right" style="margin-top: 75px" />
+		</div>
+		<div>
+			<h3>About Me</h3>
+			<p align="justify">Howdy! My name is <a href="https://www.facebook.com/senya1987" target="_blank">Jason Lin</a>.
+			<br>I am currently an assistant professor in the <a href="https://www.istm.fcu.edu.tw/index_en.php" target="_blank">International School of Technology and Management</a> at <a href="http://en.fcu.edu.tw" target="_blank">Feng Chia University</a>, Taiwan.
+			<br>I hold a doctoral degree in <a href="https://engineering.tamu.edu/ce/index.html" target="_blank">Computer Engineering</a> from <a href="https://www.tamu.edu" target="_blank">Texas A&M University</a>, College Station.</p>
+		</div>
+		<div>
+			<h3>Research Interests</h3>
+		</div>
+		<div align="center">
+			<iframe id="iframe_tm" width="854" height="480" src="https://www.youtube.com/embed/I3cjbB38Z4A" frameborder="3" allowfullscreen=""></iframe>
+			<iframe id="iframe_pm" width="854" height="480" src="https://www.youtube.com/embed/7oat7MatU_U" frameborder="3" allowfullscreen=""></iframe>
+			<iframe id="iframe_gi" width="854" height="480" src="https://www.youtube.com/embed/-8keqUuxT6Y" frameborder="3" allowfullscreen=""></iframe>
+			<iframe id="iframe_qc" width="854" height="480" src="https://www.youtube.com/embed/WVv5OAR4Nik" frameborder="3" allowfullscreen=""></iframe>
+		</div>
+		<div align="center">
+			<button style="height:25px; width:50px" id="hide">Close</button>
+		</div>
+		<div align="justify">
+            <p align="justify">My research mainly focuses on the fundamental issues of <a id="show_tm" class="" href='#'>Text Mining</a> and the use of <a id="show_pm" class="" href='#'>Process Mining</a> techniques to explore the coreference patterns of textual descriptions and mathematical expressions from scientific documents. 
             <br>Before diving into this field, I was actively involved in a project sponsored by the <a href="https://www.onr.navy.mil/" target="_blank">Office of Naval Research</a>, which developed a situational awareness system based on <a id="show_gi" class="" href='#'>Geospatial Intelligence</a> and conflict events to model the tactical behavior of asymmetric warfare. 
             <br>Apart from the above research, I have also studied <a  id="show_qc" class="" href='#'>Quantum Computing</a> and published several significant results in prestigious journals. 
-            <br>Please feel free to contact me if you need any further information.</p>
-        </div>
+			<br>Please feel free to contact me if you have any questions regarding my research.</p>
+		</div>
         <div>
-            <h3>Selected Recent Publications</h3>
-            <ul>
-                <li>J. Lin, X. Wang, Z. Wang, D. Beyette, and J.-C. Liu*, 
-                <br><a href="https://dl.acm.org/citation.cfm?id=3345399" target="_blank">Prediction of Mathematical Expression Declarations Based on Spatial, Semantic, and Syntactic Analysis</a>, 
-                <br><i>Proceedings of the 19th ACM Symposium on Document Engineering (DocEng'19)</i>, Berlin, Germany, Sept. 23-26, 2019.</li>
-                <li>J. Lin, X. Wang, and J.-C. Liu*, 
-                <br><a href="https://dl.acm.org/citation.cfm?id=3229106" target="_blank">Prediction of Mathematical Expression Constraints (ME-Con)</a>, 
-                <br><i>Proceedings of the 18th ACM Symposium on Document Engineering (DocEng'18)</i>, Halifax, Nova Scotia, Canada, Aug. 28-31, 2018.</li>
+			<h3>Selected Recent Publications</h3>
+			<ul>
+				<li>W. Hong, J. Chen, P.-S. Chang, J. Wu, T.-S. Chen, and J. Lin*, 
+				<br><a href="https://ieeexplore.ieee.org/document/9306802" target="_blank">A Color Image Authentication Scheme With Grayscale Invariance</a>, 
+				<br><i>IEEE Access</i>, Vol. 9, pp. 6522-6535, Dec. 24, 2020.</li>
+				<li>J. Lin, X. Wang, Z. Wang, D. Beyette, and J.-C. Liu*, 
+				<br><a href="https://dl.acm.org/citation.cfm?id=3345399" target="_blank">Prediction of Mathematical Expression Declarations Based on Spatial, Semantic, and Syntactic Analysis</a>, 
+				<br><i>Proceedings of the 19th ACM Symposium on Document Engineering (DocEng'19)</i>, Berlin, Germany, Sept. 23-26, 2019.</li>
+				<li>J. Lin, X. Wang, and J.-C. Liu*, 
+				<br><a href="https://dl.acm.org/citation.cfm?id=3229106" target="_blank">Prediction of Mathematical Expression Constraints (ME-Con)</a>, 
+				<br><i>Proceedings of the 18th ACM Symposium on Document Engineering (DocEng'18)</i>, Halifax, Nova Scotia, Canada, Aug. 28-31, 2018.</li>
 				<li>X. Wang, J. Lin, R. Vrecenar, and J.-C. Liu*, 
-                <br><a href="https://dl.acm.org/citation.cfm?id=3229116" target="_blank">QuQn Map: Qualitative-Quantitative Mapping of Scientific Papers</a>, 
-                <br><i>Proceedings of the 18th ACM Symposium on Document Engineering (DocEng'18)</i>, Halifax, Nova Scotia, Canada, Aug. 28-31, 2018.</li>
+				<br><a href="https://dl.acm.org/citation.cfm?id=3229116" target="_blank">QuQn Map: Qualitative-Quantitative Mapping of Scientific Papers</a>, 
+				<br><i>Proceedings of the 18th ACM Symposium on Document Engineering (DocEng'18)</i>, Halifax, Nova Scotia, Canada, Aug. 28-31, 2018.</li>
 				<li>S.-H. Kao, J. Lin, C.-W. Tsai, and T. Hwang*, 
 				<br><a href="https://link.springer.com/article/10.1007/s10773-018-3715-5" target="_blank">An Improved Protocol for Controlled Deterministic Secure Quantum Communication Using Five-Qubit Entangled State</a>, 
 				<br><i>International Journal of Theoretical Physics</i>, Vol. 57, No. 6, pp. 1894-1902, Mar. 10, 2018.</li>
-                <li>X. Wang, J. Lin, R. Vrecenar, and J.-C. Liu*, 
-                <br><a href="https://ieeexplore.ieee.org/abstract/document/8244676" target="_blank">Syntactic Role Identification of Mathematical Expressions</a>, 
+				<li>X. Wang, J. Lin, R. Vrecenar, and J.-C. Liu*, 
+				<br><a href="https://ieeexplore.ieee.org/abstract/document/8244676" target="_blank">Syntactic Role Identification of Mathematical Expressions</a>, 
                 <br><i>Proceedings of the 12th International Conference on Digital Information Management (ICDIM'17)</i>, pp. 179-184, Fukuoka, Japan, Sept. 12-14, 2017.</li>
 				<li>C.-W. Tsai, J. Lin*, 
 				<br><a href="https://link.springer.com/article/10.1007/s10773-016-2950-x" target="_blank">Fault-tolerant Remote Quantum Entanglement Establishment for Secure Quantum Communications</a>, 
 				<br><i>International Journal of Theoretical Physics</i>, Vol. 55, No. 7, pp. 3200-3206, Feb. 20, 2016.</li>
-                <li>J. Lin, B. Qu, X. Wang, S. George, and J.-C. Liu*, 
-                <br><a href="https://senyalin.github.io/research/109_preprint.pdf" target="_blank">Strategic Planning and Tactical Situational Awareness Using MECH</a>, 
-                <br><i>Proceedings of the 20th International Command and Control Research and Technology Symposium (ICCRTS)</i>, Annapolis, MD, June 16-19, 2015.</li>
-                <li>X. Wang, J. Lin, S. George, and J.-C. Liu*, 
-                <br><a href="https://senyalin.github.io/research/104_preprint.pdf" target="_blank">DT-GIS System for Tactical Pattern Exploration in Asymmetric Conflicts</a>, 
-                <br><i>Proceedings of the 20th International Command and Control Research and Technology Symposium (ICCRTS)</i>, Annapolis, MD, June 16-19, 2015.</li>
-                <li>J. Lin, B. Qu, X. Wang, S. George, and J.-C. Liu*, 
-                <br><a href="https://link.springer.com/chapter/10.1007/978-3-319-16268-3_42" target="_blank">Risk Management in Asymmetric Conflict: Using Predictive Route Reconnaissance to Assess and Mitigate Threats</a>, 
-                <br><i>Proceedings of the 8th International Conference on Social Computing, Behavioral-Cultural Modeling, and Prediction (SBP'15)</i>, pp. 350-355, Washington, DC, Mar. 31-Apr. 3, 2015.</li>
-            </ul>
-        </div>
-        <div>
-            <h3>Sponsored Projects</h3>
-            <ul>
-                <li><a href="https://www.energy.gov/sites/prod/files/2017/06/f34/TexasAM_TIMER_FactSheet.pdf" target="_blank">Timing Intrusion Management Ensuring Resiliency (TIMER)</a>,
-		<br>DOE, $440k out of the total cost of $4.4 million, 2016-2020.</li>
-		<li><a href="https://senyalin.github.io/report/pact.pdf" target="_blank">Probabilistic Forecast Tracking and Calibration Software System</a>,
-		<br>Apache Corporation, $56k out of the total cost of $112k, 2017-2018.</li>
-		<li><a href="https://govtribe.com/award/federal-contract-award/definitive-contract-fa875016c0200" target="_blank">Context Aware Mission Auditing System</a>,
-		<br>AFRL, $35k, 2016-2017.</li>
-		<li><a href="https://apps.dtic.mil/docs/citations/ADA623600" target="_blank">MECH: Algorithms and Tools for Automated Assessment of Potential Attack Locations</a>,
-		<br>ONR, $622k, 2012-2015.</li>
-            </ul>
-        </div>
+			</ul>
+		</div>
+		<div>
+		<h3>Sponsored Projects</h3>
+		<ul>
+			<li><a href="https://www.energy.gov/sites/prod/files/2017/06/f34/TexasAM_TIMER_FactSheet.pdf" target="_blank">Timing Intrusion Management Ensuring Resiliency (TIMER)</a>,
+			<br>DOE, $440k out of the total cost of $4.4 million, 2016-2020.</li>
+			<li><a href="https://senyalin.github.io/report/pact.pdf" target="_blank">Probabilistic Forecast Tracking and Calibration Software System</a>,
+			<br>Apache Corporation, $56k out of the total cost of $112k, 2017-2018.</li>
+			<li><a href="https://govtribe.com/award/federal-contract-award/definitive-contract-fa875016c0200" target="_blank">Context Aware Mission Auditing System</a>,
+			<br>AFRL, $35k, 2016-2017.</li>
+			<li><a href="https://apps.dtic.mil/docs/citations/ADA623600" target="_blank">MECH: Algorithms and Tools for Automated Assessment of Potential Attack Locations</a>,
+			<br>ONR, $622k, 2012-2015.</li>
+		</ul>
+		</div>
 		<div>
 			<h3>Teaching Activities</h3>
 			<ul>
@@ -137,26 +131,26 @@
 					<li>Introduction to MATLAB Programming (Spring 2021)</li>
 					<li>Artificial Intelligence and Future Challenges (<a href="https://ilearn2.fcu.edu.tw/course/view.php?id=83060" target="_blank">Fall 2020</a>)</li>
 					<li>Programming Applications for Engineers (<a href="https://ilearn2.fcu.edu.tw/course/view.php?id=82154" target="_blank">Fall 2020</a>)</li>
-                </ul>
+				</ul>
 				<li><u>Texas A&M University</u></li>
-                <ul>
-                    <li>Introduction to Program Design and Concepts (Fall 2018) (Spring 2019) (Fall 2019)</li>
-                    <li>Data Structures and Algorithms (Spring 2016)</li>
-                    <li>Analysis of Algorithms (Fall 2015)</li>
-                    <li>Design and Analysis of Algorithms (Spring 2015)</li>
-                    <li>Discrete Structures for Computing (<a href="http://faculty.cse.tamu.edu/davis/csce222_fall14.html" target="_blank">Fall 2014</a>)</li>
-                </ul>
-            </ul>
-        </div>
-        <div>
-            <h3>Contact</h3>
-            <ul>
-                <!-- This is a comment -->
-                <li>Email: <a href="mailto:senyalin@email.tamu.edu">senyalin@tamu.edu</a></li>
-            </ul>
-        </div>
-        <div>
-            <a href="http://s01.flagcounter.com/more/dAxF"><img src="//s01.flagcounter.com/count/dAxF/bg_FFFFFF/txt_000000/border_000000/columns_3/maxflags_12/viewers_0/labels_0/pageviews_1/flags_0/percent_0/" alt="Flag Counter" border="0"></a>
-        </div>
-    </body>
+				<ul>
+					<li>Introduction to Program Design and Concepts (Fall 2018) (Spring 2019) (Fall 2019)</li>
+					<li>Data Structures and Algorithms (Spring 2016)</li>
+					<li>Analysis of Algorithms (Fall 2015)</li>
+					<li>Design and Analysis of Algorithms (Spring 2015)</li>
+					<li>Discrete Structures for Computing (<a href="http://faculty.cse.tamu.edu/davis/csce222_fall14.html" target="_blank">Fall 2014</a>)</li>
+				</ul>
+			</ul>
+		</div>
+		<div>
+			<h3>Contact</h3>
+			<ul>
+				<!-- This is a comment -->
+				<li>Email: <a href="mailto:jasonlin@fcu.edu.tw">jasonlin@fcu.edu.tw</a></li>
+			</ul>
+		</div>
+		<div>
+			<a href="http://s01.flagcounter.com/more/dAxF"><img src="//s01.flagcounter.com/count/dAxF/bg_FFFFFF/txt_000000/border_000000/columns_3/maxflags_12/viewers_0/labels_0/pageviews_1/flags_0/percent_0/" alt="Flag Counter" border="0"></a>
+		</div>
+	</body>
 </html>
