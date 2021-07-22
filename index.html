@@ -6,7 +6,6 @@
 			$(document).ready(function(){
 				var url_tm = $('#iframe_tm').attr('src');
 				var url_pm = $('#iframe_pm').attr('src');
-				var url_gi = $('#iframe_gi').attr('src');
 				var url_qc = $('#iframe_qc').attr('src');
 				
 				$('iframe').hide();
@@ -28,13 +27,6 @@
 					$('iframe').attr('src', '').hide();
 					//$('button').hide();
 					$('#iframe_pm').attr('src', url_pm).show();
-					$('button').show();
-				});
-				
-				$('#show_gi').click(function(){
-					$('iframe').attr('src', '').hide();
-					//$('button').hide();
-					$('#iframe_gi').attr('src', url_gi).show();
 					$('button').show();
 				});
 				
@@ -76,8 +68,8 @@
 		</div>
 		<div align="justify">
             <p align="justify">My research mainly focuses on the fundamental issues of <a id="show_tm" class="" href='#'>Text Mining</a> and the use of <a id="show_pm" class="" href='#'>Process Mining</a> techniques to explore the coreference patterns of textual descriptions and mathematical expressions from scientific documents. 
-            <br>Before diving into this field, I was actively involved in a project sponsored by the <a href="https://www.onr.navy.mil/" target="_blank">ONR</a>, which developed a situational awareness system based on <a id="show_gi" class="" href='#'>Geospatial Intelligence</a> and conflict events to model the tactical behavior of asymmetric warfare. 
-            <br>Apart from the above research, I have also studied <a  id="show_qc" class="" href='#'>Quantum Computing</a> and published several significant results in prestigious journals.
+            Before diving into this field, I was actively involved in a project sponsored by the ONR, which developed a situational awareness system based on the geospatial analysis of historical conflict events to model the insurgency behavior of asymmetric warfare. 
+            Apart from the above research, I have also studied <a  id="show_qc" class="" href='#'>Quantum Computing</a> and published several significant results in prestigious journals.
 			<br>Please feel free to shoot me an email if you need any further information.</p>
 		</div>
         <div>
